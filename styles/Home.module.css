@@ -31,7 +31,7 @@
 }
 
 .button button:hover {
-    box-shadow: 0 0 10px #fda085;
+    box-shadow: 0 0 20px #fda085;
     color: #ffffff;
     background-position: right center;
     cursor: pointer;
