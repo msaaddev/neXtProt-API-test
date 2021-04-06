@@ -17,9 +17,7 @@ https://api.nextprot.org/entry-publications/entry/NX_P01308/count.json
     const fetchResults = async () => {
         try {
             setResponse('loading...');
-            const res = await axios.get(
-                `https://api.nextprot.org/entry-publications/entry/NX_P01308/count.json`
-            );
+            const res = await axios.get(api);
             const { data } = res;
             setResponse(data);
         } catch (error) {
