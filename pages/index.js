@@ -6,6 +6,14 @@ import axios from 'axios';
 export default function Home() {
     const [response, setResponse] = useState('');
 
+    const api = `https://api.nextprot.org/entry-publications/entry/NX_P01308/count.json`;
+
+    const msg = `
+# API Endpoint that I am testing
+
+https://api.nextprot.org/entry-publications/entry/NX_P01308/count.json
+`;
+
     const fetchResults = async () => {
         try {
             setResponse('loading...');
@@ -36,6 +44,7 @@ export default function Home() {
                 <button onClick={fetchResults}>Click Me!</button>
             </div>
             <div className={styles.code}>
+                {response !== '' && <pre className={styles.api}>{msg}</pre>}
                 {response !== '' && <pre className='json'>{JSON.stringify(response, null, 2)}</pre>}
             </div>
         </div>

@@ -44,10 +44,15 @@
     width: 40%;
 }
 
+.api {
+    font-size: 1.2rem;
+}
+
 .code pre {
     border: solid 1px #fad000;
     border-radius: 5px;
     background: #2d2b55;
     color: #fad000;
     padding: 20px 50px;
+    margin-top: 50px;
 }
